@@ -15,6 +15,9 @@ env:
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
+    permissions:
+        contents: write
+        pull-requests: write
 
     steps:
       # Doc: https://github.com/marketplace/actions/checkout
